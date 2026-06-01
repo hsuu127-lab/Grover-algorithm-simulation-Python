@@ -2,7 +2,7 @@
 
 這個專案是模擬量子演算法 Grover Algorithm。本研究聚焦於 Grover's Algorithm 的實作，並在數學上證明且在 Qiskit 上利用通用量子閘集合（Universal Gate Set）去合成並模擬套件未原生提供的特殊黑盒子（Oracle）與擴散器（Diffuser）。
 
-- **通用量子閘合成證明（Universal Gate Synthesis）：** 運用線性代數與么正矩陣（Unitary Matrix）分解，從數學上嚴謹證明：如何利用 Qiskit 原生提供的基礎量子閘（如 $X, H, CNOT$ 等），組裝出原本並未提供的特殊量子算子。
+- **通用量子閘合成證明（Universal Gate Synthesis）：** 理論上所有的量子匣都能Universal Gate 組合出來，本專案運用線性代數與么正矩陣（Unitary Matrix）分解，從數學上嚴謹證明：如何利用 Qiskit 原生提供的基礎量子閘（如 $X, H, CNOT$ 等），組裝出原本並未提供的特殊量子算子。
 - **自定義 Oracle & Diffuser 實作：** 本專案將上述數學證明用小數字實作，在 Qiskit 框架下建構出專屬的黑盒子與相位放大的 Quantum Circuits。
 - **NumPy 與 Qiskit 雙引擎驗證：** 
   1. 先用 NumPy 進行純矩陣乘法的底層數值模擬，確保數學邏輯與機率振幅（Probability Amplitude）的收斂正確。
